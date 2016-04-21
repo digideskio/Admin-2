@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Home/Login -->
+<html class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" hola_ext_inject="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Login</title>
+    <link href="goSwiff/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <script src="./Admin Portal - Login_files/scripts"></script>
+
+    <script src="./Admin Portal - Login_files/AES"></script>
+
+    <link href="common/css/bootstrap.css" rel="stylesheet">
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/base_admin.css" rel="stylesheet">
+<!--    <link href="common/css/rtl_admin.css" rel="stylesheet">-->
+<!--    <link href="common/css/bootstrap-rtl.css" rel="stylesheet">-->
+    <link href="goSwiff/css/goSwiff_admin.css" rel="stylesheet">
+
+    
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/goSwiff/Web_SwiffSIT/Admin/Scripts/respond.min.js"> </script>
+        <script type="text/javascript" src="/goSwiff/Web_SwiffSIT/Admin/Scripts/selectivizr-min.js"> </script>
+    <![endif]-->
+</head>
+<body class="bg-white">
+    <div id="wrap">
+        <div class="navbar navbar-default navbar-fixed navbar-no-border-radius" role="navigation">
+            <div class="headerLogo text-center">
+                <h1 class="logo"><a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Home/Login#">
+                    <img src="goSwiff/img/kcb_signatures_portal.png"></a></h1>
+            </div>
+        </div>
+        
+
+<div class="container container-login">
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Sign In</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-signin">
+                        <div class="form-group">
+                            <input autofocus="autofocus" class="form-control" id="displayedUserName" maxlength="50" name="displayedUserName" placeholder="Username" type="text" value="">
+                        </div>
+                        <div class="form-group padding-bottom-sm">
+                            <input class="form-control" id="displayedPassword" maxlength="50" name="displayedPassword" placeholder="Password" type="password" value="">
+                        </div>
+                        <input class="btn btn-lg btn-primary btn-block" type="button" value="Sign In">
+                    </div>
+
+<form action="./Admin Portal - Login_files/Admin Portal - Login.html" autocomplete="off" id="hiddenForm" method="post">                        <input type="hidden" id="userName" name="username">
+                        <input type="hidden" id="password" name="password">
+<input name="__RequestVerificationToken" type="hidden" value="K-7V_DUoWNpdzkTPB3i30EYfISlYuQX5cr_IOwMOSMI1v0k-g6y49D4iT8fU3s4iKOrX8HlxfMu4UK5gebDJpU1xhLLpSHRaUs2aahlS16NPyovbWXssJyKZnM0OPjjwf9_ifqK8syJqD5HJfz4cYX-82QvV5t58pDCMUdylMms1"></form>                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 text-center col-md-offset-3 padding-bottom-sm">
+            <label>
+                <a class="forget" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Setting/ResetPasswordRequest">Forgot Password?</a>
+            </label>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    
+    $("#hiddenForm").submit(function () {
+        //[#7082] password AES encryption by R. Javier on 03/24/2015
+        var key = CryptoJS.enc.Hex.parse('7fba225a19fb4279a03c98a50d212b4b690774676748422d8c686b1790eeb7e7');
+        var iv = CryptoJS.enc.Hex.parse('ca9d1c00fdc14ad0b0060611117d1054');
+        var encrypted = CryptoJS.AES.encrypt($("#displayedPassword").val(), key, { iv: iv });
+
+        $("#userName").val($("#displayedUserName").val());
+        $("#password").val(encrypted);
+    });
+
+    $("#displayedUserName,#displayedPassword").keypress(function (e) {
+        if (e.which == 13) {
+            $("#hiddenForm").submit();
+        }
+    });
+
+    $(".btn").click(function () {
+        $("#hiddenForm").submit();
+    });
+</script>
+        
+        <div class="push"></div>
+    </div>
+    <div id="footer">
+    <div class="container">
+        <div class="col-xs-12 col-md-6 footer-text-align-left">
+            <p><a href="http://www.goswiff.com/">powered by goSwiff</a></p>
+            <p>© 2016 goSwiff. All rights reserved</p>
+        </div>
+        <div class="col-xs-12 col-md-6 footer-text-align-right">
+            <p>Version Develop - f735a47</p>
+            <p>Best viewed in latest version of Safari, Chrome, Firefox and IE</p>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            if (!window.console) console = { log: function () { } };
+            $.fn.placeholder();
+        });
+
+        (function ($) {
+            $.fn.placeholder = function () {
+                if (typeof document.createElement("input").placeholder == 'undefined') {
+                    $('[placeholder]').focus(function () {
+                        var input = $(this);
+                        if (input.val() == input.attr('placeholder')) {
+                            input.val('');
+                            input.removeClass('placeholder');
+                        }
+                    }).blur(function () {
+                        var input = $(this);
+                        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                            input.addClass('placeholder');
+                            input.val(input.attr('placeholder'));
+                        }
+                    }).blur().parents('form').submit(function () {
+                        $(this).find('[placeholder]').each(function () {
+                            var input = $(this);
+                            if (input.val() == input.attr('placeholder')) {
+                                input.val('');
+                            }
+                        });
+                    });
+                }
+            };
+        })(jQuery);
+    </script>
+
+
+</body></html>

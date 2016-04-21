@@ -1,0 +1,534 @@
+/* rtl */
+.portal-name h3 {
+    float: left !important;
+    margin-left: 16% !important;
+    margin-right: 0 !important;
+}
+
+#logo{
+    float: right !important;
+}
+
+a .fa {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.fa-fw {
+    width: auto;
+}
+
+.dynatable-per-page-label{
+    margin-right: 5px;
+}
+
+#MerchantDetail_bin_restriction_type{
+    margin-right: 0 !important;
+}
+
+.switch{
+    direction: ltr !important;
+}
+
+.modal-header > h3{
+    margin-right: 20px;
+}
+
+@media (min-width: 800px){
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: right;
+    }
+}
+
+#merchantAction{
+    float: left;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    text-align: right !important;
+}
+
+#footer{
+    text-align: right !important;
+}
+
+.dropdown-menu{
+    right: auto;
+}
+
+.monospaced-li {
+    width: 180px;
+    float: right;
+    text-align: right; 
+}
+
+.input-group-addon {
+    color: #ccc;
+}
+
+.glyphicon-chevron-right:before {
+    content: "\e079" !important;
+    display: inline-block;
+}
+
+#side-menu > li > a > .glyphicon-chevron-right {
+    float: left;
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: -6px;
+    opacity: 0.25;
+    font-size: 11px;
+}
+
+.nav-second-level li a {
+    padding-right: 37px;
+    padding-left: 15px;
+}
+
+#logo {
+    margin-left: 0 !important;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.navbar-top-links > li:last-child {
+    margin-left: 15px;
+    margin-right: 0 !important;
+}
+
+a .glyphicon {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.bfh-flag-AD,
+.bfh-flag-AE,
+.bfh-flag-AF,
+.bfh-flag-AG,
+.bfh-flag-AI,
+.bfh-flag-AL,
+.bfh-flag-AM,
+.bfh-flag-AN,
+.bfh-flag-AO,
+.bfh-flag-AQ,
+.bfh-flag-AR,
+.bfh-flag-AS,
+.bfh-flag-AT,
+.bfh-flag-AU,
+.bfh-flag-AW,
+.bfh-flag-AX,
+.bfh-flag-AZ,
+.bfh-flag-BA,
+.bfh-flag-BB,
+.bfh-flag-BD,
+.bfh-flag-BE,
+.bfh-flag-BG,
+.bfh-flag-BH,
+.bfh-flag-BI,
+.bfh-flag-BJ,
+.bfh-flag-BL,
+.bfh-flag-BM,
+.bfh-flag-BN,
+.bfh-flag-BO,
+.bfh-flag-BR,
+.bfh-flag-BS,
+.bfh-flag-BT,
+.bfh-flag-BW,
+.bfh-flag-BY,
+.bfh-flag-BZ,
+.bfh-flag-CA,
+.bfh-flag-CD,
+.bfh-flag-CF,
+.bfh-flag-CG,
+.bfh-flag-CH,
+.bfh-flag-CI,
+.bfh-flag-CL,
+.bfh-flag-CM,
+.bfh-flag-CN,
+.bfh-flag-CO,
+.bfh-flag-CR,
+.bfh-flag-CV,
+.bfh-flag-CY,
+.bfh-flag-CZ,
+.bfh-flag-DJ,
+.bfh-flag-DK,
+.bfh-flag-DM,
+.bfh-flag-DO,
+.bfh-flag-DZ,
+.bfh-flag-EC,
+.bfh-flag-EE,
+.bfh-flag-EG,
+.bfh-flag-EH,
+.bfh-flag-ER,
+.bfh-flag-ES,
+.bfh-flag-ET,
+.bfh-flag-EU,
+.bfh-flag-FI,
+.bfh-flag-FJ,
+.bfh-flag-FK,
+.bfh-flag-FM,
+.bfh-flag-FO,
+.bfh-flag-FR,
+.bfh-flag-FX,
+.bfh-flag-GF,
+.bfh-flag-GP,
+.bfh-flag-MQ,
+.bfh-flag-NC,
+.bfh-flag-PF,
+.bfh-flag-PM,
+.bfh-flag-RE,
+.bfh-flag-TF,
+.bfh-flag-WF,
+.bfh-flag-GA,
+.bfh-flag-GB,
+.bfh-flag-GD,
+.bfh-flag-GE,
+.bfh-flag-GG,
+.bfh-flag-GH,
+.bfh-flag-GL,
+.bfh-flag-GM,
+.bfh-flag-GN,
+.bfh-flag-GQ,
+.bfh-flag-GR,
+.bfh-flag-GS,
+.bfh-flag-GT,
+.bfh-flag-GU,
+.bfh-flag-GW,
+.bfh-flag-GY,
+.bfh-flag-HK,
+.bfh-flag-HN,
+.bfh-flag-HR,
+.bfh-flag-HT,
+.bfh-flag-HU,
+.bfh-flag-ID,
+.bfh-flag-IE,
+.bfh-flag-IL,
+.bfh-flag-IM,
+.bfh-flag-IN,
+.bfh-flag-IQ,
+.bfh-flag-IS,
+.bfh-flag-IT,
+.bfh-flag-JE,
+.bfh-flag-JM,
+.bfh-flag-JO,
+.bfh-flag-JP,
+.bfh-flag-KE,
+.bfh-flag-KG,
+.bfh-flag-KH,
+.bfh-flag-KI,
+.bfh-flag-KM,
+.bfh-flag-KN,
+.bfh-flag-KP,
+.bfh-flag-KR,
+.bfh-flag-KV,
+.bfh-flag-KW,
+.bfh-flag-KY,
+.bfh-flag-LA,
+.bfh-flag-LC,
+.bfh-flag-LK,
+.bfh-flag-LR,
+.bfh-flag-LS,
+.bfh-flag-LT,
+.bfh-flag-LU,
+.bfh-flag-LV,
+.bfh-flag-LY,
+.bfh-flag-MA,
+.bfh-flag-ME,
+.bfh-flag-MG,
+.bfh-flag-MH,
+.bfh-flag-ML,
+.bfh-flag-MM,
+.bfh-flag-MP,
+.bfh-flag-MR,
+.bfh-flag-MS,
+.bfh-flag-MT,
+.bfh-flag-MU,
+.bfh-flag-MV,
+.bfh-flag-MW,
+.bfh-flag-MZ,
+.bfh-flag-NA,
+.bfh-flag-NE,
+.bfh-flag-NF,
+.bfh-flag-NG,
+.bfh-flag-NI,
+.bfh-flag-NL,
+.bfh-flag-NO,
+.bfh-flag-NP,
+.bfh-flag-NR,
+.bfh-flag-NZ,
+.bfh-flag-OM,
+.bfh-flag-PA,
+.bfh-flag-PE,
+.bfh-flag-PG,
+.bfh-flag-PH,
+.bfh-flag-PK,
+.bfh-flag-PL,
+.bfh-flag-PN,
+.bfh-flag-PS,
+.bfh-flag-PT,
+.bfh-flag-PW,
+.bfh-flag-PY,
+.bfh-flag-QA,
+.bfh-flag-RS,
+.bfh-flag-RU,
+.bfh-flag-RW,
+.bfh-flag-SA,
+.bfh-flag-SB,
+.bfh-flag-SC,
+.bfh-flag-SD,
+.bfh-flag-SE,
+.bfh-flag-SG,
+.bfh-flag-SH,
+.bfh-flag-SI,
+.bfh-flag-SK,
+.bfh-flag-SM,
+.bfh-flag-SN,
+.bfh-flag-SO,
+.bfh-flag-SR,
+.bfh-flag-SS,
+.bfh-flag-ST,
+.bfh-flag-SV,
+.bfh-flag-SY,
+.bfh-flag-SZ,
+.bfh-flag-TC,
+.bfh-flag-TD,
+.bfh-flag-TG,
+.bfh-flag-TH,
+.bfh-flag-TJ,
+.bfh-flag-TM,
+.bfh-flag-TN,
+.bfh-flag-TP,
+.bfh-flag-TR,
+.bfh-flag-TT,
+.bfh-flag-TV,
+.bfh-flag-TW,
+.bfh-flag-TZ,
+.bfh-flag-UA,
+.bfh-flag-UG,
+.bfh-flag-US,
+.bfh-flag-UY,
+.bfh-flag-UZ,
+.bfh-flag-VC,
+.bfh-flag-VE,
+.bfh-flag-VG,
+.bfh-flag-VI,
+.bfh-flag-VN,
+.bfh-flag-VU,
+.bfh-flag-WS,
+.bfh-flag-YE,
+.bfh-flag-ZA,
+.bfh-flag-ZM,
+.bfh-flag-BF,
+.bfh-flag-CU,
+.bfh-flag-DE,
+.bfh-flag-IR,
+.bfh-flag-KZ,
+.bfh-flag-LB,
+.bfh-flag-LI,
+.bfh-flag-MC,
+.bfh-flag-MD,
+.bfh-flag-MK,
+.bfh-flag-MN,
+.bfh-flag-MO,
+.bfh-flag-MX,
+.bfh-flag-MY,
+.bfh-flag-PR,
+.bfh-flag-RO,
+.bfh-flag-SL,
+.bfh-flag-TO,
+.bfh-flag-VA,
+.bfh-flag-ZW,
+.bfh-flag-EUR,
+.bfh-flag-XCD {
+    margin-left: 5px;
+    margin-right: 0;
+    float: right;
+}
+
+.bfh-selectbox .bfh-selectbox-toggle {
+    padding: 5px 15px 5px 25px;
+}
+
+.bfh-selectbox .bfh-selectbox-toggle .bfh-selectbox-option {
+    float: none;
+
+}
+
+.bfh-selectbox .bfh-selectbox-toggle .selectbox-caret {
+    float: left;
+    margin-top: 8px;
+    margin-right: -10px;
+    margin-left: -16px;
+}
+
+.padding-left-0 {
+    padding-left: 15px !important;
+    padding-right: 0 !important;
+}
+
+.padding-right-0 {
+    padding-left: 0 !important;
+    padding-right: 15px !important;
+}
+
+.datepicker {
+    left: 0;
+    right: auto !important;
+}
+
+.dynatable-per-page {
+    float: right;
+}
+
+.dynatable-pagination-links {
+    float: left !important;
+}
+
+.dynatable-page-prev {
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-right-width: 1px;
+    border-top-right-radius: 4px;
+}
+
+.dynatable-page-next {
+    border-left-width: 1px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+label.pull-right {
+    text-align: left !important;
+}
+
+@media (min-width: 992px) {
+    .tab-border {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 7px;
+        right: -15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .tab-right {
+        float: left !important;
+    }
+}
+
+[role="option"] { 
+    direction: ltr;
+}
+
+#language-select {
+    direction: ltr;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+     margin-right: 0 !important; 
+     margin-left: 0 !important; 
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+     float: none; 
+    margin-left: 0;
+}
+
+.dynatable-search {
+    float: left !important;
+}
+
+.setting-button {
+    margin-left: 15px;
+}
+
+.glyphicon-hand-left:before {
+    content: "\e127";
+}
+
+.glyphicon-hand-right:before {
+    content: "\e128";
+}
+
+.navbar-top-links {
+    float: left !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-top-links {
+        float: right !important;
+        clear: right !important;
+    }
+}
+
+@media (max-width: 560px) {
+    #filter-container {
+        padding-left: 0;
+        float: left;
+        clear:left;
+    }   
+}
+
+@media (min-width: 760px) and (max-width: 810px) {
+    #filter-container {
+        padding-left: 0;
+        float: left;
+        clear:left;
+    }   
+}
+
+#faq-menu > li > a > .glyphicon-chevron-right {
+    float: left;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: -6px;
+    opacity: 0.25;
+}
+
+.hangingindent {
+    padding-right: 55px !important;
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: left !important;
+    }
+}
+
+li.tabdrop > .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+.note {
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 0px;
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .pull-right-sm {
+        float: left !important;
+    }
+}
+
+#exportModal input.checkbox {
+    min-height: 0;
+}
+
+.glyphicon-chevron-right {
+    float: left !important;
+}
+
+@media (max-width: 620px) {
+    #exportModal .email-data {
+        clear: left;
+        margin-top: 5px;
+    }
+}

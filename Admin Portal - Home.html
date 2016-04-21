@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard -->
+<html class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" hola_ext_inject="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Home</title>
+    <link href="goSwiff/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <script src="./Admin Portal - Login_files/scripts"></script>
+
+    <script src="./Admin Portal - Login_files/AES"></script>
+
+    <link href="common/css/bootstrap.css" rel="stylesheet">
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/base_admin.css" rel="stylesheet">
+<!--    <link href="common/css/rtl_admin.css" rel="stylesheet">-->
+<!--    <link href="common/css/bootstrap-rtl.css" rel="stylesheet">-->
+    <link href="goSwiff/css/goSwiff_admin.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/goSwiff/Web_SwiffSIT/Admin/Scripts/respond.min.js"> </script>
+        <script type="text/javascript" src="/goSwiff/Web_SwiffSIT/Admin/Scripts/selectivizr-min.js"> </script>
+    <![endif]-->
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a id="logo">
+                <img src="goSwiff/img/logo.png">
+            </a>
+            <a class="navbar-brand">Admin Portal</a>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="navbar-date">21 January, 2016, Thursday</li>
+                    <li class="navbar-language">
+<form action="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard/SetSelectedCulture" autocomplete="off" id="cultureForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="xTUpMa9Yk6dhxbr6DQVzOTBWQxnKf5vOZqruXmsDFNDN_Ql1gNOjP76JE3EMy-49GXF5YrEsSKc-EpD3ZkXJSOPUeas1f9AZGKoxypnPM4xUdoFSvXE7vHToJ1ARQL98t9BUawSeHRq7IZ-8L0oMU1i0Ae1nqWA6g5lsZBLJVBs1">                            <div id="language-select" class="bfh-selectbox bfh-languages" data-name="cultureCode" data-language="en-US" data-available="en-US,zh-TW,es-MX,ru-RU,th-TH,az-Cyrl-AZ,ka-GE,ar-DZ,ro-RO" data-flags="true"><input type="hidden" name="cultureCode" value="en-US"><a class="bfh-selectbox-toggle form-control" role="button" data-toggle="bfh-selectbox" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#"><span class="bfh-selectbox-option"><i class="glyphicon bfh-flag-US"></i>English (United States)</span><span class="caret selectbox-caret"></span></a><div class="bfh-selectbox-options"><div role="listbox"><ul role="option"><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="en-US"><i class="glyphicon bfh-flag-US"></i>English (United States)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="zh-TW"><i class="glyphicon bfh-flag-TW"></i>中文&nbsp;(Zhōngwén) (Taiwan)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="es-MX"><i class="glyphicon bfh-flag-MX"></i>Español (Mexico)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="ru-RU"><i class="glyphicon bfh-flag-RU"></i>русский язык (Russia)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="th-TH"><i class="glyphicon bfh-flag-TH"></i>ไทย (Thailand)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="az-Cyrl-AZ"><i class="glyphicon bfh-flag-AZ"></i>Azərbaycan Dili (Azerbaijan)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="ka-GE"><i class="glyphicon bfh-flag-GE"></i>ქართული (Georgia)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="ar-DZ"><i class="glyphicon bfh-flag-DZ"></i>العربية (Algeria)</a></li><li><a tabindex="-2" href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#" data-option="ro-RO"><i class="glyphicon bfh-flag-RO"></i>Limba Română (Romania)</a></li></ul></div></div></div>
+</form>                    </li>
+                 <li class="pull-right">
+                    <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </li>
+                <li id="logout-nav" class="logout-mobile">
+                    <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Home/Logout"><i class="fa fa-sign-out fa-fw"></i>Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side sidebar" role="navigation">
+            <div class="sidebar-collapse active">
+                    <ul class="nav" id="side-menu">
+
+                        <li id="homeLink">
+                            <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/" class="active"><i class="fa fa-home"></i>Home</a>
+                        </li>
+                            <li id="transactionLink">
+                                <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Transaction"><i class="fa fa-list-ul"></i>Transactions</a>
+                            </li>
+                        <li id="mechantMangementLink" class="active">
+                            <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#"><i class="fa fa-shopping-cart"></i>Merchant Management<span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <ul id="mechantMangementList" class="nav nav-second-level collapse in">
+                                    <li id="merchantgroupLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/MerchantGroup"><i class="glyphicon glyphicon-none"></i>Merchant Groups</a>
+                                    </li>
+                                                                    <li id="merchantLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Merchant"><i class="glyphicon glyphicon-none"></i>Merchants</a>
+                                    </li>
+                                                                    <li id="staffLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/StaffReport"><i class="glyphicon glyphicon-none"></i>Staff</a>
+                                    </li>
+                            </ul>
+                        </li>
+                            <li>
+                                <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#"><i class="fa fa-trophy"></i>Campaigns<span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li id="merchantReward">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/MRP"><i class="glyphicon glyphicon-none"></i>Merchant Rewards</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        <li>
+                            <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#"><i class="fa fa-user"></i>Administration<span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                    <li id="accountLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Account"><i class="glyphicon glyphicon-none"></i>Accounts</a>
+                                    </li>
+                                                                    <li id="providerLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Provider"><i class="glyphicon glyphicon-none"></i>Provider Settings</a>
+                                    </li>
+                                    <li id="resellerLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Reseller"><i class="glyphicon glyphicon-none"></i>Reseller Settings</a>
+                                    </li>
+                                    <li id="gatewayLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Gateway"><i class="glyphicon glyphicon-none"></i>Gateway Settings</a>
+                                    </li>
+                                    <li id="interopSystemLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/InteropSystem"><i class="glyphicon glyphicon-none"></i>Transaction Notifiers</a>
+                                    </li>
+                                <li id="settingLink">
+                                    <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Setting"><i class="glyphicon glyphicon-none"></i>General Settings</a>
+                                </li>
+                                
+                                    <li id="readerfileLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/ReaderFile"><i class="glyphicon glyphicon-none"></i>Reader Settings</a>
+                                    </li>
+
+                                    <li id="logLink">
+                                        <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Log"><i class="glyphicon glyphicon-none"></i>Logs</a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li id="supportLink">
+                            <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Dashboard#"><i class="fa fa-life-ring"></i>Support<span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <ul id="suppostList" class="nav nav-second-level collapse">
+                                <li id="FAQLink">
+                                    <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Help"><i class="glyphicon glyphicon-none"></i>FAQ</a>
+                                </li>
+                                
+                                <li id="documentationLink">
+                                    <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Help/Documentation"><i class="glyphicon glyphicon-none"></i>Documentation</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Begin LMS Changes  -->
+                        <!-- End LMS Changes  -->
+                        <li id="logout-sidebar" class="logout-mobile" style="display: none">
+                            <a href="https://mpos2.corp.sccpgroup.com/goSwiff/Web_SwiffSIT/Admin/Home/Logout"><i class="fa fa-sign-out fa-fw"></i>Log out</a>
+                        </li>
+                    </ul>
+                    <!-- /#side-menu -->
+            </div>
+            <!-- /.sidebar-collapse -->
+        </nav>
+        <!-- /.navbar-static-side -->
+        <div id="page-wrapper">
+            <br>
+            
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="alert alert-info">Your last login on 1/21/2016 11:31:31 AM was Failed</div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./Admin Portal - Home_files/bootstrap-datepicker.js"> </script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //#5612 Start
+        var formId = 'dashboardForm';
+
+        var startDate = $('#dp_start').datepicker().on('changeDate', function () {
+            if (formId == "searchStaffForm" ) {
+                $('.dropdown-filter').first().change();
+            }
+            else if (formId == "transactionForm" || formId == "mrpForm") {
+                $('.dropdown-filter').eq(1).change();
+            }
+            $('.startDatepicker').change();
+        }).data('datepicker');
+
+        var endDate = $('#dp_end').datepicker({
+            onRender: function (date) {
+                if ($('#dp_start').find('input').val() != "") {
+                    if (date.valueOf() < startDate.date.valueOf())
+                        return 'disabled';
+                }
+                return '';
+            }
+        }).on('changeDate', function () {
+            if (formId == "searchStaffForm" || formId == "createMRPForm") {
+                $('.dropdown-filter').first().change();
+            }
+            else if (formId == "transactionForm" || formId == "mrpForm") {
+                $('.dropdown-filter').eq(1).change();
+            }
+            endDate.setValue(endDate.date);
+        }).data('datepicker');
+
+        $('.startDatepicker').focusout(function () {
+            if ($(this).val() != "") {
+                startDate.setValue($(this).val()); //set the user key in value in datepicker
+                $('.startDatepicker').change();
+            }
+        });
+
+        $('.startDatepicker').change(function () {
+            //if user key in or select the start date which is greater than end date, reset the end date value
+            if (startDate.date.valueOf() > endDate.date.valueOf())
+                endDate.setValue(startDate.date);
+            else
+                endDate.setValue(endDate.date); //To reload the disabled/enabled dates bcos value in start date textbox might change
+
+            $('.endDatePicker').change();
+        });
+        //#5612 End
+    });
+
+</script>
+
+<link rel="stylesheet" href="./Admin Portal - Home_files/morris-0.5.1.css">
+<script type="text/javascript" src="./Admin Portal - Home_files/morris.js"></script>
+<script type="text/javascript" src="./Admin Portal - Home_files/raphael.js"></script>
+<script type="text/javascript" src="./Admin Portal - Home_files/analytics-chart.js"></script>
+
+
+
+<style type="text/css">
+    .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+        background-color: #F9F9F9;
+    }
+
+    .table-striped th, .table-striped td {
+        border-top: 1px solid #DDDDDD;
+    }
+
+    .well-large {
+        padding: 0;
+    }
+</style>
+<div id="dash">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3 col-md-3 pull-left">
+                            <label>
+                                Snapshot
+                            </label>
+                        </div>
+                        <div class="col-xs-4 col-md-3 pull-right padding-left-0">
+                            <select id="FilterMerchant" class="form-control input-sm">
+                                <option value="">All Merchants</option>
+                                <optgroup label="Merchant Groups">
+                                        <option value="1">merchantgrouptin</option>
+                                        <option value="2">merchantKP</option>
+                                        <option value="3">JSONMerchantGroup</option>
+                                        <option value="5">QA TEST</option>
+                                        <option value="6">goSwiffCyberSource</option>
+                                        <option value="7">Wasla Merchants</option>
+                                        <option value="8">NIBSS merchants</option>
+                                        <option value="9">Q Merchant Group</option>
+                                        <option value="10009">HphRhRAO</option>
+
+                                </optgroup>
+                                <optgroup label="Merchants">
+                                        <option value="12">&lt;/null&gt;&lt;/null&gt;</option>
+                                        <option value="10064">121325</option>
+                                        <option value="52">ADEDAYO IPADEOLA ADEYEM</option>
+                                        <option value="30">ANDMerchant_8216</option>
+                                        <option value="11">asdfawe</option>
+                                        <option value="27">Batch Upload 1</option>
+                                        <option value="29">Batch Upload 2</option>
+                                        <option value="18">Bray Test Merchant</option>
+                                        <option value="32">Cheeky Test Merchant</option>
+                                        <option value="35">CyberSource Merchant</option>
+                                        <option value="14">DCC_test</option>
+                                        <option value="43">dcctest</option>
+                                        <option value="38">ENTHYST LIMITED</option>
+                                        <option value="10058">EPOS_Merchant</option>
+                                        <option value="40">EveryPay</option>
+                                        <option value="57">Ferdz Test</option>
+                                        <option value="55">FOLASHADE EBUNOLUWA SAL</option>
+                                        <option value="17">GCB Test Merchant</option>
+                                        <option value="10079">Gel's Store</option>
+                                        <option value="10075">Georgian</option>
+                                        <option value="42">goSwiff</option>
+                                        <option value="22">goSwiff Test</option>
+                                        <option value="6">goSwiff Test Merchant</option>
+                                        <option value="10083">H2Merchant_1841</option>
+                                        <option value="10086">H3Merchant_0102</option>
+                                        <option value="10071">HMerchant_8453</option>
+                                        <option value="41">ICC Test Merchant</option>
+                                        <option value="10080">ICC Test Merchant-2535</option>
+                                        <option value="33">ING NFC</option>
+                                        <option value="10084">ING_merchant</option>
+                                        <option value="34">Ininal NFC</option>
+                                        <option value="23">JMerchant</option>
+                                        <option value="15">JSON_TEST</option>
+                                        <option value="28">Karina</option>
+                                        <option value="10074">KarinaTest</option>
+                                        <option value="10066">kp</option>
+                                        <option value="8">KP</option>
+                                        <option value="39">LIZZYN INTEGRATED SERVI</option>
+                                        <option value="10077">masive prospect</option>
+                                        <option value="20">MerchantTTTTTT</option>
+                                        <option value="10059">Min Htet</option>
+                                        <option value="10085">MPGS_merchant</option>
+                                        <option value="21">myMerchant</option>
+                                        <option value="26">myMerchant</option>
+                                        <option value="10082">Nizam</option>
+                                        <option value="53">Openway RUB</option>
+                                        <option value="16">Priorbank Test Merchant</option>
+                                        <option value="31">QA Test Merchant</option>
+                                        <option value="10067">QAMerchant</option>
+                                        <option value="58">QMerchant</option>
+                                        <option value="10061">RonTin</option>
+                                        <option value="10078">rontin_session</option>
+                                        <option value="10072">rontin1120</option>
+                                        <option value="10062">roseAnn</option>
+                                        <option value="37">Rustam</option>
+                                        <option value="10088">Selle_Merchant</option>
+                                        <option value="10087">Server Team</option>
+                                        <option value="56">Stephen_Store_Test</option>
+                                        <option value="10069">TBC_TestGateway-6361</option>
+                                        <option value="54">Test</option>
+                                        <option value="7">Test Web Gateways</option>
+                                        <option value="10070">test001</option>
+                                        <option value="10065">testgel</option>
+                                        <option value="13">testMerchant</option>
+                                        <option value="25">TestMerchant</option>
+                                        <option value="36">testMerchant_001</option>
+                                        <option value="9">testRoseMer</option>
+                                        <option value="10073">Test-TBC SMS</option>
+                                        <option value="19">TestTest</option>
+                                        <option value="24">tintin</option>
+                                        <option value="10063">tintin</option>
+                                        <option value="10076">TM001Merchant</option>
+                                        <option value="10">TrialMerchantF</option>
+                                        <option value="10068">VACP</option>
+                                        <option value="5">whtest</option>
+                                        <option value="10081">wil_session</option>
+                                        <option value="10060">wilfred Merchant</option>
+
+                                </optgroup>
+                            </select>
+                            <input type="hidden" id="IsMerchantGroup" name="IsMerchantGroup" value="false">
+                        </div>
+                        <div class="col-xs-5 col-md-3 pull-right">
+                            <label class="pull-right">
+                                Filter by merchant
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                TRANSACTION VOLUME PREVIOUS 6 MONTHS
+                            </div>
+                            <div class="panel-body">
+                                <img class="loader panel-body" src="./Admin Portal - Home_files/loader.gif" style="display: none;">
+                                <div id="chart1" class="chartContainer" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="260" version="1.1" width="811" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaÃ«l 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.515625" y="221" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,221H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="172" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">175</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,172H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="122.99999999999999" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="3.999999999999986" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">350</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,122.99999999999999H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="74" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">525</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,74H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.515625" y="24.99999999999997" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="3.9999999999999716" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">700</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.015625,24.99999999999997H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="724.2513020833334" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">21/01/2016</tspan></text><text x="600.75390625" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22/12/2015</tspan></text><text x="477.2565104166667" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22/11/2015</tspan></text><text x="353.7591145833333" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">23/10/2015</tspan></text><text x="230.26171875" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">23/09/2015</tspan></text><text x="106.76432291666666" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">24/08/2015</tspan></text><rect x="60.452799479166664" y="219.04" width="16.124609375" height="1.960000000000008" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="79.57740885416666" y="184.04" width="16.124609375" height="36.96000000000001" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="98.70201822916667" y="218.76" width="16.124609375" height="2.240000000000009" r="0" rx="0" ry="0" fill="#4da74d" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="117.82662760416666" y="220.44" width="16.124609375" height="0.5600000000000023" r="0" rx="0" ry="0" fill="#afd8f8" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="136.95123697916665" y="209.52" width="16.124609375" height="11.47999999999999" r="0" rx="0" ry="0" fill="#edc240" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="183.95019531249997" y="220.72" width="16.124609375" height="0.28000000000000114" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="203.07480468749998" y="214.56" width="16.124609375" height="6.439999999999998" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="222.19941406249995" y="221" width="16.124609375" height="0" r="0" rx="0" ry="0" fill="#4da74d" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="241.32402343749996" y="221" width="16.124609375" height="0" r="0" rx="0" ry="0" fill="#afd8f8" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="260.44863281249997" y="219.32" width="16.124609375" height="1.6800000000000068" r="0" rx="0" ry="0" fill="#edc240" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="307.4475911458333" y="221" width="16.124609375" height="0" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="326.5722005208333" y="212.6" width="16.124609375" height="8.400000000000006" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="345.6968098958333" y="221" width="16.124609375" height="0" r="0" rx="0" ry="0" fill="#4da74d" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="364.8214192708333" y="221" width="16.124609375" height="0" r="0" rx="0" ry="0" fill="#afd8f8" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="383.9460286458333" y="220.16" width="16.124609375" height="0.8400000000000034" r="0" rx="0" ry="0" fill="#edc240" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="430.9449869791667" y="220.44" width="16.124609375" height="0.5600000000000023" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="450.06959635416666" y="201.4" width="16.124609375" height="19.599999999999994" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="469.1942057291667" y="218.48" width="16.124609375" height="2.5200000000000102" r="0" rx="0" ry="0" fill="#4da74d" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="488.3188151041667" y="217.36" width="16.124609375" height="3.6399999999999864" r="0" rx="0" ry="0" fill="#afd8f8" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="507.44342447916665" y="195.51999999999998" width="16.124609375" height="25.480000000000018" r="0" rx="0" ry="0" fill="#edc240" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="554.4423828124999" y="221" width="16.124609375" height="0" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="573.5669921874999" y="50.75999999999999" width="16.124609375" height="170.24" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="592.6916015624998" y="201.12" width="16.124609375" height="19.879999999999995" r="0" rx="0" ry="0" fill="#4da74d" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="611.8162109374999" y="215.4" width="16.124609375" height="5.599999999999994" r="0" rx="0" ry="0" fill="#afd8f8" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="630.9408203124999" y="128.6" width="16.124609375" height="92.4" r="0" rx="0" ry="0" fill="#edc240" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="677.9397786458333" y="219.04" width="16.124609375" height="1.960000000000008" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="697.0643880208332" y="100.88" width="16.124609375" height="120.12" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="716.1889973958332" y="211.48" width="16.124609375" height="9.52000000000001" r="0" rx="0" ry="0" fill="#4da74d" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="735.3136067708333" y="215.4" width="16.124609375" height="5.599999999999994" r="0" rx="0" ry="0" fill="#afd8f8" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="754.4382161458333" y="165" width="16.124609375" height="56" r="0" rx="0" ry="0" fill="#edc240" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg><div class="morris-hover morris-default-style" style="left: 677.251px; top: 65px;"><div class="morris-hover-row-label">21/01/2016</div><div class="morris-hover-point" style="color: #0b62a4">
+  Pending:
+  7
+</div><div class="morris-hover-point" style="color: #7a92a3">
+  Complete:
+  429
+</div><div class="morris-hover-point" style="color: #4da74d">
+  Voided:
+  34
+</div><div class="morris-hover-point" style="color: #afd8f8">
+  Reversed:
+  20
+</div><div class="morris-hover-point" style="color: #edc240">
+  Error:
+  200
+</div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                APPROVED TRANSACTIONS PREVIOUS 6 MONTHS
+                            </div>
+                            <div class="panel-body">
+                                <img class="loader panel-body" src="./Admin Portal - Home_files/loader.gif" style="display: none;">
+                                <div id="chart2" class="chartContainer" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="260" version="1.1" width="811" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.5px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaÃ«l 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="42.515625" y="221" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,221H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="172" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">500</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,172H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="123" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,123H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="74" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,74H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,25H786" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="776.2535416666666" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">19/01/2016</tspan></text><text x="688.5354166666666" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">01/01/2016</tspan></text><text x="600.8172916666666" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">14/12/2015</tspan></text><text x="513.0991666666666" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">26/11/2015</tspan></text><text x="425.38104166666665" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">08/11/2015</tspan></text><text x="337.66291666666666" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">21/10/2015</tspan></text><text x="249.94479166666667" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">03/10/2015</tspan></text><text x="162.22666666666666" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15/09/2015</tspan></text><text x="74.50854166666667" y="233.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">28/08/2015</tspan></text><path fill="#a7b3bc" stroke="none" d="M55.015625,202.38L201.2125,218.06L347.409375,217.766L493.60625,196.01L639.803125,106.634L786,144.07L786,221L55.015625,221Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#7a92a3" d="M55.015625,202.38L201.2125,218.06L347.409375,217.766L493.60625,196.01L639.803125,106.634L786,144.07" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="55.015625" cy="202.38" r="0" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="201.2125" cy="218.06" r="0" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="347.409375" cy="217.766" r="0" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="493.60625" cy="196.01" r="0" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="639.803125" cy="106.634" r="0" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="786" cy="144.07" r="3" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#2577b5" stroke="none" d="M55.015625,213.454L201.2125,219.726L347.409375,220.706L493.60625,208.064L639.803125,185.23L786,198.166L786,221L55.015625,221Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#0b62a4" d="M55.015625,213.454L201.2125,219.726L347.409375,220.706L493.60625,208.064L639.803125,185.23L786,198.166" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="55.015625" cy="213.454" r="0" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="201.2125" cy="219.726" r="0" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="347.409375" cy="220.706" r="0" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="493.60625" cy="208.064" r="0" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="639.803125" cy="185.23" r="0" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="786" cy="198.166" r="3" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 717px; top: 113px;"><div class="morris-hover-row-label">21/01/2016</div><div class="morris-hover-point" style="color: #0b62a4">
+  Declined:
+  233
+</div><div class="morris-hover-point" style="color: #7A92A3">
+  Approved:
+  552
+</div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 panel panel-default" style="background-color: #eee">
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-3 col-lg-3 padding-right-0">
+                            <div class="form-group input-group date" id="dp_start" data-date="" data-date-format="dd/mm/yyyy">
+                                <input id="BasicFilter_FromDateString" type="text" class="form-control startDatepicker" value="21/01/2016">
+                                <span class="input-group-addon add-on btn"><i class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 dash" style="text-align: center; vertical-align: middle;">
+                            <p>-</p>
+                        </div>
+                        <div class="col-xs-5 col-sm-4 col-md-3 col-lg-3 padding-left-0">
+                            <div class="form-group input-group date" id="dp_end" data-date="" data-date-format="dd/mm/yyyy">
+                                <input id="BasicFilter_ToDateString" type="text" class="form-control" value="21/01/2016">
+                                <span class="input-group-addon add-on btn"><i class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <button type="button" id="apply-filter" class="btn btn-primary allow-wrap">Apply date range</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    TRANSACTION VOLUME BY CARD TYPE
+                                </div>
+                                <div class="panel-body">
+                                    <img class="loader loader-pie panel-body" src="./Admin Portal - Home_files/loader.gif" style="display: none;">
+                                    <div id="chart3" class="chartContainer"><p style="line-height:260px;text-align:center; font-family: Arial"><strong>No records for this date range</strong></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    BREAKDOWN OF INCOMPLETE TRANSACTIONS
+                                </div>
+                                <div class="panel-body">
+                                    <img class="loader loader-pie panel-body" src="./Admin Portal - Home_files/loader.gif" style="display: none;">
+                                    <div id="chart4" class="chartContainer"><p style="line-height:260px;text-align:center; font-family: Arial"><strong>No records for this date range</strong></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>Number of staff</td>
+                                                <td><a id="numOfStaff">185</a></td>
+                                                <td>Avg. number of transactions per active device</td>
+                                                <td><a id="avgNumPrAcDv">0</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Avg. transaction amount per device</td>
+                                                <td><a id="avgTranPrDv">NA</a></td>
+                                                <td>Avg. transaction volume per user</td>
+                                                <td><a id="avgTranPrUr">0</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>EMV transactions</td>
+                                                <td><a id="emvTranP">-</a></td>
+                                                <td>MSR transactions</td>
+                                                <td><a id="msrTranP">-</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>EMV contactless transactions</td>
+                                                <td><a id="emvTranC">-</a></td>
+                                                <td>MSD contactless transactions</td>
+                                                <td><a id="msdTranC">-</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Active staff</td>
+                                                <td><a id="actSt">0</a></td>
+                                                <td>Inactive staff</td>
+                                                <td><a id="inactSt">185</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Active devices</td>
+                                                <td><a id="actDv">0</a></td>
+                                                <td>Inactive devices</td>
+                                                <td><a id="inactDv">622</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Active merchants</td>
+                                                <td><a id="actMr">0</a></td>
+                                                <td>Total merchants</td>
+                                                <td><a id="totMr">77</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div id="morris-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        setActive("homeLink");
+    });
+    var Processing_localized = 'Processing';
+    var Transaction_count_localized = 'Transaction Count';
+
+    var Pending_localized = 'Pending';
+    var Complete_localized = 'Complete';
+    var Voided_localized = 'Voided';
+    var Reversed_localized = 'Reversed';
+    var Error_localized = 'Error';
+
+    var Approved_localized = 'Approved';
+    var Declined_localized = 'Declined';
+
+    var Unknown_localized = 'Unknown';
+
+    $("#FilterMerchant").change(function () {
+        var label = $('#FilterMerchant :selected').parent().attr('label');
+        if (label == "Merchant Groups") {
+            $("#IsMerchantGroup").val("true");
+        }
+        else {
+            $("#IsMerchantGroup").val("false");
+        }
+    });
+</script>
+
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <div class="push">
+        <div class="push-nav hidden-xs">
+        </div>
+    </div>
+    <div id="footer">
+    <div class="container">
+        <div class="col-xs-12 col-md-6 footer-text-align-left">
+            <p><a href="http://www.goswiff.com/">powered by goSwiff</a></p>
+            <p>© 2016 goSwiff. All rights reserved</p>
+        </div>
+        <div class="col-xs-12 col-md-6 footer-text-align-right">
+            <p>Version Develop - f735a47</p>
+            <p>Best viewed in latest version of Safari, Chrome, Firefox and IE</p>
+        </div>
+    </div>
+</div>
+    
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        
+        if (!window.console) console = { log: function () { } };
+
+        
+        $('input[data-val-required], input[data-val-length-max], input[data-val-range-max]').each(function () {
+            var $this = $(this);
+            var data = $this.data();
+
+	        
+            if (data.valRequired !== undefined && $this.is('[placeholder]') == false)
+                $this.attr('placeholder', 'Required field');
+
+            
+            var maxLength = 0;
+            if (data.valLengthMax !== undefined)
+                maxLength = data.valLengthMax;
+            else if (data.valRangeMax !== undefined)
+                maxLength = (data.valRangeMax + '').length;
+            if (maxLength > 0)
+                $this.attr('maxlength', maxLength);
+        });
+
+        
+        $('*[data-toggle="tooltip"]').each(function () {
+            var parentDiv = $(this).parent().parent();
+            if (parentDiv.hasClass('has-switch')) {
+                parentDiv.attr('title', $(this).attr('title'));
+                parentDiv.tooltip({ placement: 'right' });
+            } else {
+                $(this).tooltip();
+            }
+        });
+
+        $.fn.placeholder();
+        $('#side-menu').metisMenu({
+            toggle: false
+        });
+
+        $('#language-select').bfhlanguages();
+
+        $(document).ajaxError(function (xhr, props) {
+            if (props.status === 401) {
+                window.location = '/goSwiff/Web_SwiffSIT/Admin/Home/Login';
+            }
+        });
+    });
+
+    //Loads the correct sidebar on window load,
+    //collapses the sidebar on window resize.
+    $(function () {
+        $(window).bind("load resize", function () {
+            console.log($(this).width())
+            if ($(this).width() < 768) {
+                $('div.sidebar-collapse').addClass('collapse')
+            } else {
+                $('div.sidebar-collapse').removeClass('collapse')
+            }
+        })
+    })
+
+    //Loads the correct sidebar on window load,
+    //collapses the sidebar on window resize.
+    $(function () {
+        $(window).bind("load resize", function () {
+            console.log($(this).width())
+            if ($(this).width() < 768) {
+                $('div.sidebar-collapse').addClass('collapse');
+                $('#logout-nav').hide();
+                $('.divider').hide();
+                $('#logout-sidebar').show();
+
+            } else {
+                $('div.sidebar-collapse').removeClass('collapse');
+                $('#logout-nav').show();
+                $('.divider').show();
+                $('#logout-sidebar').hide();
+            }
+        })
+    })
+
+    function setActive(id) {
+        if ($('#' + id).parents().eq(0).attr('id') != 'side-menu') {
+            $('#' + id).parents().eq(0).metisMenu().collapse();
+        }
+        $('#' + id).parents().eq(1).addClass("active");
+        $('#' + id).find("a").addClass("active");
+    }
+
+    $('#language-select').on('click', '[role=option] > li > a', function () {
+        $("[name=cultureCode]").val($(this).data("option"));
+        $("#cultureForm").submit();
+    });
+
+    // placeholder attribute support for IE8
+    (function ($) {
+        $.fn.placeholder = function () {
+            if (typeof document.createElement("input").placeholder == 'undefined') {
+                $('[placeholder]').focus(function () {
+                    var input = $(this);
+                    if (input.val() == input.attr('placeholder')) {
+                        input.val('');
+                        input.removeClass('placeholder');
+                    }
+                }).blur(function () {
+                    var input = $(this);
+                    if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                        input.addClass('placeholder');
+                        input.val(input.attr('placeholder'));
+                    }
+                }).blur().parents('form').submit(function () {
+                    $(this).find('[placeholder]').each(function () {
+                        var input = $(this);
+                        if (input.val() == input.attr('placeholder')) {
+                            input.val('');
+                        }
+                    });
+                });
+            }
+        };
+    })(jQuery);
+
+</script>
+<div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">January 2016</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day  old">27</td><td class="day  old">28</td><td class="day  old">29</td><td class="day  old">30</td><td class="day  old">31</td><td class="day ">1</td><td class="day ">2</td></tr><tr><td class="day ">3</td><td class="day ">4</td><td class="day ">5</td><td class="day ">6</td><td class="day ">7</td><td class="day ">8</td><td class="day ">9</td></tr><tr><td class="day ">10</td><td class="day ">11</td><td class="day ">12</td><td class="day ">13</td><td class="day ">14</td><td class="day ">15</td><td class="day ">16</td></tr><tr><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day  active">21</td><td class="day ">22</td><td class="day ">23</td></tr><tr><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td><td class="day ">29</td><td class="day ">30</td></tr><tr><td class="day ">31</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td><td class="day  new">6</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2016</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month active">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year active">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">January 2016</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td><td class="day disabled">1</td><td class="day disabled">2</td></tr><tr><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td><td class="day disabled">8</td><td class="day disabled">9</td></tr><tr><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td><td class="day disabled">15</td><td class="day disabled">16</td></tr><tr><td class="day disabled">17</td><td class="day disabled">18</td><td class="day disabled">19</td><td class="day disabled">20</td><td class="day  active">21</td><td class="day ">22</td><td class="day ">23</td></tr><tr><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td><td class="day ">29</td><td class="day ">30</td></tr><tr><td class="day ">31</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td><td class="day  new">6</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2016</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month active">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year active">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></body></html>
